@@ -1,0 +1,22 @@
+body {
+  max-width: 800px;
+  font-family: monospace;
+  text-transform: lowercase;
+  font-size: 1.3rem;
+  margin: 50px auto;
+}
+
+.date {
+  font-style: italic;
+}
+
+div#dreams {
+  padding-top: 50px;
+}
+
+.dream {
+  padding: 10px 0px;
+}
+.dashed {
+  border-bottom: dashed 3px #888;
+}
