@@ -1,9 +1,13 @@
 body {
   max-width: 800px;
-  font-family: monospace;
-  text-transform: lowercase;
-  font-size: 1.3rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
   margin: 50px auto;
+  line-height: 2rem;
+}
+
+p.description::first-letter {
+  font-size: 2rem;
 }
 
 .date {
@@ -11,7 +15,7 @@ body {
 }
 
 div#dreams {
-  padding-top: 50px;
+  padding-top: 20px;
 }
 
 .dream {

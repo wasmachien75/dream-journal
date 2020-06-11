@@ -29,7 +29,7 @@
     <p:with-param name="doc-collection" select="resolve-uri($source)"/>
     <p:with-option name="template-name" select="'xsl:initial-template'"/>
   </p:xslt>
-  <p:store href="../dist/index.html" method="html" encoding="utf-8" indent="true" version="5" name="store"/>
+  <p:store href="../index.html" method="html" encoding="utf-8" indent="true" version="5" name="store"/>
   <!--<p:exec name="git-push" command="git" args="push">
     <p:with-option name="result-is-xml" select="false()"/>
     <p:with-option name="errors-is-xml" select="false()"/>
