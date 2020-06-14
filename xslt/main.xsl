@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" exclude-result-prefixes="#all" xmlns:dr="dream" version="3.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:wvl="wvl">
-  <xsl:output method="html" encoding="UTF-8"/>
-  <xsl:param name="doc-collection" as="xs:anyURI"/>
+  <xsl:output method="xml" encoding="UTF-8"/>
+  <xsl:param name="doc-collection" as="xs:anyURI" select="resolve-uri('../xml/')"/>
   <xsl:template name="xsl:initial-template">
-    <xsl:comment expand-text="true">Generated on {adjust-dateTime-to-timezone(current-dateTime(), xs:dayTimeDuration('PT0H'))} </xsl:comment>
-    <html>
+    <html lang="en">
+      <xsl:comment expand-text="true">Generated on {adjust-dateTime-to-timezone(current-dateTime(), xs:dayTimeDuration('PT0H'))} </xsl:comment>
       <head>
         <title>DREAM JOURNAL</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&amp;display=swap" rel="stylesheet"/>
         <style>
-          <xsl:value-of select="unparsed-text('../css/style.css')"/>
+          <xsl:value-of select="unparsed-text('../css/style.css') => normalize-space()"/>
         </style>
       </head>
       <body>
