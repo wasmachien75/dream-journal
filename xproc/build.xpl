@@ -11,7 +11,6 @@
       <null/>
     </p:inline>
   </p:output>
-  <p:serialization port="result" method="html" encoding="utf-8" indent="true" include-content-type="false" media-type="html"/>
   <p:variable name="source" select="resolve-uri('../xml')"/>
   <p:for-each name="validate-all">
     <p:iteration-source select="collection($source)"/>
