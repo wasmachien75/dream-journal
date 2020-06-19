@@ -1,1 +1,3 @@
 /dist
+/test
+!/test/test.xspec
