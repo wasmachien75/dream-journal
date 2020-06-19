@@ -25,11 +25,16 @@
   </xsl:template>
 
   <xsl:template name="header">
-    <h1>Dream journal</h1>
+    <div id="header">
+      <h1>Dream journal</h1>
+      <div id="moon">
+        <img src="https://phasesmoon.com/moonpng/moon-phase-9.png"/>
+      </div>
+    </div>
   </xsl:template>
 
   <xsl:template match="dr:dream">
-    <div class="{if(position() ne last()) then 'dashed' else ''} dream" xsl:expand-text="true">
+    <div class="{if(position() ne last()) then 'dashed ' else ''}dream" xsl:expand-text="true">
       <p class="date">{dr:date => wvl:format-date()}</p>
       <p class="description">{dr:description => normalize-space()}</p>
     </div>
