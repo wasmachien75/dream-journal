@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <p:declare-step xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:p="http://www.w3.org/ns/xproc" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:c="http://www.w3.org/ns/xproc-step" xmlns:cx="http://xmlcalabash.com/ns/extensions" version="3.0" name="validate-transform">
-  <p:import href="file:/C:/Users/willem.van.lishout/Documents/Repositories/xspec/src/harnesses/harness-lib.xpl"/>
-  <p:import href="http://xmlcalabash.com/extension/steps/library-1.0.xpl"/>
+  <p:import href="harness-lib.xpl"/>
   <p:input port="parameters" kind="parameter"/>
   <p:input port="source">
     <p:document href="../xml/dreams.xml"/>
@@ -66,11 +65,7 @@
         <p:with-param name="doc-collection" select="resolve-uri($source)"/>
         <p:with-option name="template-name" select="'xsl:initial-template'"/>
       </p:xslt>
-      <p:store href="../index.html" method="html" encoding="utf-8" indent="true" version="5" name="store"/>
+      <p:store href="../index.html" method="html" encoding="utf-8" indent="false" version="5" name="store"/>
     </p:otherwise>
   </p:choose>
-  <!--<p:exec name="git-push" command="git" args="push">
-    <p:with-option name="result-is-xml" select="false()"/>
-    <p:with-option name="errors-is-xml" select="false()"/>
-  </p:exec>-->
 </p:declare-step>

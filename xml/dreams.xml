@@ -1,39 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../schema/dreams.rnc" type="application/relax-ng-compact-syntax"?>
-<dr:dreams xmlns:dr="dream" xmlns="http://www.w3.org/1999/xhtml">
-  <dr:dream>
-    <dr:date>2020-06-07</dr:date>
-    <dr:description> Back in Moscow, the school. What a hellhole. Shook hands with the head teacher, the witch. Mass gathering of students. Covid scares. I want to get out of here. Got a message from
-      my Russian friend. I probably didn't answer. </dr:description>
-  </dr:dream>
-  <dr:dream>
-    <dr:date>2020-06-09</dr:date>
-    <dr:description> Family gathering. Many people, crowded even. Running around. I lost my shoe. I lost my pants. I feel ashamed. I lost a card game. My little sister won everything. I See my
-      grandmother, in her old house, celebrating New Year in the summer. </dr:description>
-  </dr:dream>
-  <dr:dream>
-    <dr:date>2020-06-11</dr:date>
-    <dr:description> M. invites me to her wedding. I am together with my brothers and mom in some strange house. L. wants me to go shopping for him. I get angry, I'm working from home. Discussed with
-      C. that my work can't be done that easily. </dr:description>
-  </dr:dream>
-  <dr:dream>
-    <dr:date>2020-06-12</dr:date>
-    <dr:description> Played a video game with my brothers. I had invited them to my lonely apartment near the sea. I did my best not to make them bored. Did we lose H.? L. came back to work. I'm
-      happy. </dr:description>
-  </dr:dream>
-  <dr:dream>
-    <dr:date>2020-06-14</dr:date>
-    <dr:description>Back in Russia. This time I'm a student, it seems. Further details elude me.</dr:description>
-  </dr:dream>
-  <dr:dream>
-    <dr:date>2020-06-15</dr:date>
-    <dr:description>On a bike,in the dark. It's some kind of game. I see dead people next to the road. I'm in L. I meet with K., an old classmate. We're in love. We have no place to meet. I then go to
+<dreams xmlns="dream">
+  <dream>
+    <date>2020-06-07</date>
+    <description> Back in Moscow, the school. What a hellhole. Shook hands with the head teacher, the witch. Mass gathering of students. Covid scares. I want to get out of here. Got a message from my
+      Russian friend. I probably didn't answer. </description>
+  </dream>
+  <dream>
+    <date>2020-06-09</date>
+    <description> Family gathering. Many people, crowded even. Running around. I lost my shoe. I lost my pants. I feel ashamed. I lost a card game. My little sister won everything. I See my
+      grandmother, in her old house, celebrating New Year in the summer. </description>
+  </dream>
+  <dream>
+    <date>2020-06-11</date>
+    <description> M. invites me to her wedding. I am together with my brothers and mom in some strange house. L. wants me to go shopping for him. I get angry, I'm working from home. Discussed with C.
+      that my work can't be done that easily. </description>
+  </dream>
+  <dream>
+    <date>2020-06-12</date>
+    <description> Played a video game with my brothers. I had invited them to my lonely apartment near the sea. I did my best not to make them bored. Did we lose H.? L. came back to work. I'm happy.
+    </description>
+  </dream>
+  <dream>
+    <date>2020-06-14</date>
+    <description>Back in Russia. This time I'm a student, it seems. Further details elude me.</description>
+  </dream>
+  <dream>
+    <date>2020-06-15</date>
+    <description>On a bike,in the dark. It's some kind of game. I see dead people next to the road. I'm in L. I meet with K., an old classmate. We're in love. We have no place to meet. I then go to
       dark-haired T., who is sitting at a table outside. She's accompanied by her boyfriend. Too bad. She is cold and they decide to walk away. I go back home. My bike breaks. My phone screen is
       shattered. I've accidentally changed the pin number. I enter an underground bar with my bike. The back door says bikes are not allowed. Luckily, the bartender doesn't seem to care.
-    </dr:description>
-  </dr:dream>
-  <dr:dream>
-    <dr:date>2020-06-18</dr:date>
-  <dr:description>I turned into a cannibal. I am eating human flesh. It disgusts me. It tastes horrible. I throw it away and hope I will avoid any weird diseases.</dr:description>
-  </dr:dream>
-</dr:dreams>
+    </description>
+  </dream>
+  <dream>
+    <date>2020-06-18</date>
+    <description>I turned into a cannibal. I am eating human flesh. It disgusts me. It tastes horrible. I throw it away and hope I will avoid any weird diseases.</description>
+  </dream>
+  <dream>
+    <date>2020-06-26</date>
+    <description>I am at work. We are running towards a bus stop. A lot of us were tired afterwards. I talk to H. and K. I hope the latter can explain why nothing is working. I am wearing light
+      colored pants.</description>
+  </dream>
+  <dream>
+    <date>2020-06-27</date>
+    <description>A beautiful, large hotel by the seaside. Somebody is getting married. I feel confused and out of place. I want to go for a walk on the beach. Quickly, before the sun goes down. My family is there. So are my colleagues.
+      They are looking for a room. </description>
+  </dream>
+</dreams>

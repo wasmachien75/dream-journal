@@ -2,13 +2,17 @@ namespace dr = "dream"
 namespace html = "http://www.w3.org/1999/xhtml"
 
 start = dream | dreams
-
 html = element html:* { text? & html? }
-
 dream =
   element dr:dream {
-    element dr:date { xsd:date },
-    element dr:description { text & html* }
+    element dr:date {
+      xsd:date { minInclusive = "2020-01-01" maxExclusive = "2030-01-01" }
+    },
+    (element dr:description {
+       mixed { html }
+     }
+     | element dr:description {
+         xsd:string { minLength = "10" }
+       })
   }
-  
 dreams = element dr:dreams { dream+ }
