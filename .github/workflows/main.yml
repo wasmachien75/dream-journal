@@ -41,8 +41,17 @@ jobs:
         xspec_dir=xspec/xspec-1.6.0/src
         xspec_dir_uri=file:$(pwd)/${xspec_dir}
         java -jar calabash/xmlcalabash-1.2.1-98/xmlcalabash-1.2.1-98.jar --with-param xspec-home="${xspec_dir_uri}" $GITHUB_WORKSPACE/xproc/build.xpl
-    - name: Push output
+    - name: Commit result
       run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
         git add index.html
         git commit -m "Add page"
-        git push
+    - name: Push result
+      uses: ad-m/github-push-action@v0.6.0
+      with:
+        # Token for the repo. Can be passed in using $\{{ secrets.GITHUB_TOKEN }}
+        github_token: ${{secrets.GITHUB_TOKEN}}
+        # Repository name to push. Default or empty value represents current github repository (${GITHUB_REPOSITORY})
+        branch: gh-pages
+        # Determines if force push is used
