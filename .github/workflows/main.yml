@@ -33,10 +33,16 @@ jobs:
     
     - name: Download XSpec
       run: wget "https://github.com/xspec/xspec/archive/v1.6.0.zip" -q && unzip -q "*.zip" -d "./xspec"
+    - name: Checkout GH-Pages branch
+      run: git checkout -B gh-pages
         
     - name: Run build
       run: |
         xspec_dir=xspec/xspec-1.6.0/src
         xspec_dir_uri=file:$(pwd)/${xspec_dir}
         java -jar calabash/xmlcalabash-1.2.1-98/xmlcalabash-1.2.1-98.jar --with-param xspec-home="${xspec_dir_uri}" $GITHUB_WORKSPACE/xproc/build.xpl
-
+    - name: Push output
+      run: |
+        git add index.html
+        git commit -m "Add page"
+        git push
