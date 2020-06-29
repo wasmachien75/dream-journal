@@ -23,6 +23,7 @@
     <p:input port="source">
       <p:document href="../test/test.xspec"/>
     </p:input>
+    <p:input port="parameters"/>
   </x:compile-xslt>
   <p:xslt name="run" template-name="x:main">
     <p:input port="source">
