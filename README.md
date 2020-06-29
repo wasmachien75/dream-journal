@@ -1,4 +1,4 @@
-# dream-journal
+# Dream Tapes
 
 An over-engineered dream journal using XML technologies.
 
