@@ -11,14 +11,28 @@ div#header-inner {
   font-family: sans-serif;
 }
 
+div#header-inner {
+  display: flex;
+  font-size: 3rem;
+  font-weight: bold;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 70%;
+}
+
+div#moon{
+  max-width: 20%;
+}
+
+div#header {
+  justify-content: space-between;
+}
 
 img#cloud {
   position: absolute;
   z-index: -1;
   opacity: 0.3;
-  top: 100px;
-  max-width: 600px;
-  top: -100px;
+  max-width: 80%;
 }
 
 body {
@@ -50,22 +64,13 @@ div#dreams {
   border-bottom: dashed 2px #999;
 }
 
-h1 {
-  flex: 3;
-  align-self: center;
-  font-size: 4rem;
-}
-
 #header {
   display: flex;
 }
 
-#header div {
-  flex: 1;
-}
-
 #moon > img {
   max-height: 150px;
+  max-width: 100%;
   opacity: 0.5;
   transition: opacity 0.8s;
 }
