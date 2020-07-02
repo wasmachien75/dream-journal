@@ -12,5 +12,6 @@
     <x:expect test="$res/name() = 'html'" label="The root should be an html document"/>
     <x:expect test="exists($res/comment())" label="There should be an automatically generated comment"/>
     <x:expect test="exists($res//div[@id='dreams'])" label="There should be a div container"/>
+    <x:expect test="every $img in $res//img satisfies string-length($img/@alt)" label="Each image should have an alt attribute"/>
   </x:scenario>
 </x:description>

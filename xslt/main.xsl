@@ -29,7 +29,7 @@
   <xsl:template name="header">
     <div id="header">
       <div id="header-inner">
-        <img id="cloud" src="{wvl:get-image-with-name('cloud')}"/>
+        <img alt="Cloud" id="cloud" src="{wvl:get-image-with-name('cloud')}"/>
         <xsl:sequence select="wvl:header()"/>
       </div>
       <div id="moon">
