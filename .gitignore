@@ -1,4 +1,4 @@
 /dist
 /test
 !/test/test.xspec
-index.html
+#index.html - need to fix integration first
