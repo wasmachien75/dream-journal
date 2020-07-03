@@ -17,11 +17,13 @@
       </head>
       <body>
         <xsl:call-template name="header"/>
-        <div id="dreams">
-          <xsl:apply-templates select="collection($doc-collection)//dr:dream">
-            <xsl:sort select=".//dr:date" order="descending" data-type="text"/>
-          </xsl:apply-templates>
-        </div>
+        <main>
+          <div id="dreams">
+            <xsl:apply-templates select="collection($doc-collection)//dr:dream">
+              <xsl:sort select=".//dr:date" order="descending" data-type="text"/>
+            </xsl:apply-templates>
+          </div>
+        </main>
       </body>
     </html>
   </xsl:template>
@@ -43,26 +45,18 @@
     <xsl:value-of select="'data:image/png;base64, ' || $images//img[@name=$name]"/>
   </xsl:function>
 
-  <xsl:function name="wvl:header" as="element(div)*">
-    <div class="header-text">
-      <span style="opacity: 0.891176470588235294; font-size: 120.849394638258%;">D</span>
-      <span style="opacity: 0.832352941176470588; font-size: 60%;">r</span>
-      <span style="opacity: 0.773529411764705882; font-size: 62.924519640000376%;">e</span>
-      <span style="opacity: 0.714705882352941176; font-size: 91.17141244543386%;">a</span>
-      <span style="opacity: 0.655882352941176471; font-size: 60%;">m</span>
-    </div>
-    <div class="header-text">
-      <span style="opacity: 0.538235294117647059; font-size: 103.92258382347666%;">t</span>
-      <span style="opacity: 0.479411764705882353; font-size: 124.70269110820757%;">a</span>
-      <span style="opacity: 0.420588235294117647; font-size: 105.12581165178848%;">p</span>
-      <span style="opacity: 0.361764705882352941; font-size: 119.23879477390823%;">e</span>
-      <span style="opacity: 0.302941176470588235; font-size: 60.660290629283594%;">s</span>
-    </div>
+  <xsl:function name="wvl:header" as="element(header)*">
+    <header>
+      <h1>
+        <span id="header-1">Dream</span>
+        <span id="header-2">tapes</span>
+      </h1>
+    </header>
   </xsl:function>
 
   <xsl:template match="dr:dream">
     <div class="{if(position() ne last()) then 'dashed ' else ''}dream" xsl:expand-text="true">
-      <p class="date">{dr:date => wvl:format-date()}</p>
+      <h4 class="date">{dr:date => wvl:format-date()}</h4>
       <p class="description">{dr:description => normalize-space()}</p>
     </div>
   </xsl:template>
