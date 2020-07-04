@@ -22,7 +22,9 @@ jobs:
       - name: Download XSpec
         run: wget "https://github.com/xspec/xspec/archive/v1.6.0.zip" -q && unzip -q "*.zip" -d "./xspec"
       - name: Checkout GH-Pages branch
-        run: git checkout gh-pages
+        run: |
+          git checkout gh-pages
+          git merge master
       - name: Run build
         run: |
           xspec_dir=xspec/xspec-1.6.0/src
