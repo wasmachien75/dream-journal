@@ -1,5 +1,5 @@
 html {
-  background: linear-gradient(0deg, rgb(28, 42, 67) 0%, rgba(0, 0, 0, 1) 43%);
+  background: linear-gradient(0deg, rgb(16, 25, 40) 0%, rgba(0, 0, 0, 1) 43%);
   background-attachment: fixed;
 }
 
@@ -44,7 +44,7 @@ div#header {
 img#cloud {
   position: absolute;
   z-index: -1;
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 body {
