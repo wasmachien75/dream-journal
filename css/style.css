@@ -19,7 +19,7 @@ span#header-2 {
   left: 8px;
 }
 
-div#header,
+header,
 div#header-inner {
   position: relative;
   font-family: sans-serif;
@@ -37,7 +37,7 @@ div#moon {
   max-width: 20%;
 }
 
-div#header {
+header {
   justify-content: space-between;
 }
 
@@ -79,7 +79,7 @@ div#dreams {
   border-bottom: dashed 2px #999;
 }
 
-#header {
+header {
   display: flex;
 }
 

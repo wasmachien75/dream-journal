@@ -28,8 +28,8 @@
     </html>
   </xsl:template>
 
-  <xsl:template name="header">
-    <div id="header">
+  <xsl:template name="header" as="element(header)">
+    <header>
       <div id="header-inner">
         <img alt="Cloud" id="cloud" src="{wvl:get-image-with-name('cloud')}"/>
         <xsl:sequence select="wvl:header()"/>
@@ -37,7 +37,7 @@
       <div id="moon">
         <img alt="Moon" src="{wvl:get-image-with-name('moon')}"/>
       </div>
-    </div>
+    </header>
   </xsl:template>
 
   <xsl:function name="wvl:get-image-with-name" as="xs:string">
@@ -45,16 +45,16 @@
     <xsl:value-of select="'data:image/png;base64, ' || $images//img[@name=$name]"/>
   </xsl:function>
 
-  <xsl:function name="wvl:header" as="element(header)*">
-    <header>
+  <xsl:function name="wvl:header" as="element(div)*">
+    <div id="title">
       <h1>
         <span id="header-1">Dream</span>
         <span id="header-2">tapes</span>
       </h1>
-    </header>
+    </div>
   </xsl:function>
 
-  <xsl:template match="dr:dream">
+  <xsl:template match="dr:dream" as="element(div)">
     <div class="{if(position() ne last()) then 'dashed ' else ''}dream" xsl:expand-text="true">
       <h4 class="date">{dr:date => wvl:format-date()}</h4>
       <p class="description">{dr:description => normalize-space()}</p>
