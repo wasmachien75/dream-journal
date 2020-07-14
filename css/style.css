@@ -4,7 +4,7 @@ html {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 3.2rem;
   margin: 0
 }
 
@@ -76,7 +76,7 @@ div#dreams {
   padding: 10px 0px;
 }
 .dashed {
-  border-bottom: dashed 2px #999;
+  border-bottom: dashed 2px rgba(153,153,153, 0.8);
 }
 
 header {
@@ -92,4 +92,10 @@ header {
 
 #moon > img:hover {
   opacity: 1;
+}
+
+div#title{
+  transform: skew(-22deg) rotateX(-333deg);
+  text-transform:uppercase;
+  text-shadow: 5px 5px rgba(60,255,255,0.3);
 }
