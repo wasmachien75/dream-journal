@@ -98,4 +98,20 @@ div#title{
   transform: skew(-22deg) rotateX(-333deg);
   text-transform:uppercase;
   text-shadow: 5px 5px rgba(60,255,255,0.3);
+  animation-name: shadow;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
+
+@keyframes shadow {
+  from {
+    text-shadow: 5px 5px rgba(60, 255, 255, 0.3);
+  }
+
+  to {
+    text-shadow: 5px 5px rgba(255, 20, 255, 0.6);
+  }
+}
+
+
