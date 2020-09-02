@@ -100,6 +100,7 @@ div#title{
   text-shadow: 5px 5px rgba(60,255,255,0.3);
   animation-name: shadow;
   animation-duration: 7s;
+  animation-delay: 2s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
