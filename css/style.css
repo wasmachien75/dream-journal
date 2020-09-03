@@ -45,6 +45,7 @@ img#cloud {
   position: absolute;
   z-index: -1;
   opacity: 0.5;
+  max-width: 100%;
 }
 
 body {
@@ -115,4 +116,12 @@ div#title{
   }
 }
 
+@media (max-width: 600px){
+  div#moon{
+    display:none;
+  }
+  div#title{
+    margin-left: 5px;
+  }
+}
 
