@@ -123,5 +123,8 @@ div#title{
   div#title{
     margin-left: 5px;
   }
+  h1{
+    font-size: 2.8rem;
+  }
 }
 
