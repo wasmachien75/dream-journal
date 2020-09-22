@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" exclude-result-prefixes="#all" version="3.0" xmlns:dr="dream" xmlns:file="http://expath.org/ns/file"
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" exclude-result-prefixes="#all" version="3.0" xmlns:dr="dream"
   xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:wvl="wvl">
   <xsl:output method="xml" encoding="UTF-8"/>
   <xsl:param name="doc-collection" as="xs:anyURI" select="resolve-uri('../xml/')"/>
@@ -35,7 +35,9 @@
         <xsl:sequence select="wvl:header()"/>
       </div>
       <div id="moon">
-        <img alt="Moon" src="{wvl:get-image-with-name('moon')}"/>
+         <a href="https://github.com/willemvlh/dream-journal">
+           <img alt="Moon" src="{wvl:get-image-with-name('moon')}"/>
+        </a>
       </div>
     </header>
   </xsl:template>
