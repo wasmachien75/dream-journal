@@ -108,13 +108,17 @@ div#title {
 }
 
 @keyframes shadow {
-  from {
-    text-shadow: 6px 6px rgba(60, 255, 255, 0.4);
-  }
+ from {
+	text-shadow: 6px 6px rgba(60, 255, 255, 0.4);
+	transform: skew(-22deg) rotateX(-333deg);
+	opacity: 0.8;
+   }
 
-  to {
-    text-shadow: 6px 6px rgba(255, 20, 255, 0.4);
-  }
+to {
+	text-shadow: 6px 6px rgba(255, 20, 255, 0.4);
+	transform: skew(-11deg) rotateX(-306deg);
+	opacity: 1;
+   }
 }
 
 @media (max-width : 600px) {
