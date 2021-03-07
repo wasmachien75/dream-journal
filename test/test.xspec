@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<x:description xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:dr="dream" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:wvl="wvl" stylesheet="../xslt/main.xsl">
+  <x:scenario label="When formatting 2009-04-08">
+    <x:call function="wvl:format-date">
+      <x:param name="date">2009-04-08</x:param>
+    </x:call>
+    <x:expect label="I should see April 8th, 2009" test="$x:result = 'April 8th, 2009'"/>
+  </x:scenario>
+  <x:scenario label="Output tests">
+    <x:call template="xsl:initial-template"/>
+    <x:variable name="res" select="$x:result/root()"/>
+    <x:expect test="$res/name() = 'html'" label="The root should be an html document"/>
+    <x:expect test="exists($res/comment())" label="There should be an automatically generated comment"/>
+    <x:expect test="exists($res//div[@id='dreams'])" label="There should be a div container"/>
+    <x:expect test="every $img in $res//img satisfies string-length($img/@alt)" label="Each image should have an alt attribute"/>
+  </x:scenario>
+</x:description>

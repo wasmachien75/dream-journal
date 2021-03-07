@@ -1,0 +1,4 @@
+/dist
+/test
+!/test/test.xspec
+#index.html - need to fix integration first
